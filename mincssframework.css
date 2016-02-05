@@ -1,0 +1,597 @@
+/*
+	Creating Date : 28.01.2016 21:54
+	Author : Umutcan Akyol
+ */
+/* all replaceable */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+html,head,body,p,h1,h2,h3,h4,h5,h6,button,input{
+	margin: 15;
+	padding: 0;
+	font-family: 'Source Sans Pro';
+	font-weight: normal;
+
+}
+
+.container{
+    margin: 30px 50px 30px 50px;
+    background-color:#FFF;
+}
+/* Grids */
+.row {
+  margin: 1% 0;
+  overflow: auto;
+}
+
+.col-12 {
+  width: 100%;
+  float: left;
+}
+.col-11 {
+  width: 91.66%;
+  float: left;
+}
+.col-10 {
+  width: 83.33%;
+  float: left;
+}
+.col-9 {
+  width: 75%;
+  float: left;
+}
+.col-8 {
+  width: 66.66%;
+  float: left;
+}
+.col-7 {
+  width: 58.33%;
+  float: left;
+}
+.col-6 {
+  width: 50%;
+  float: left;
+}
+.col-5 {
+  width: 41.66%;
+  float: left;
+}
+.col-4 {
+  width: 33.33%;
+  float: left;
+}
+.col-3 {
+  width: 25%;
+  float: left;
+}
+.col-2 {
+  width: 16.66%;
+  float: left;
+}
+.col-1 {
+  width: 8.33%;
+  float: left;
+}
+@media (max-width: 870px) {
+  .row .col {
+    width: 100%;
+  }
+}
+
+/* Buttons */
+.button{
+	width: 120px;
+	height: 40px;
+	background-color: #95a5a6;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button:hover{
+	background-color: #7f8c8d;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-primary{
+	width: 120px;
+	height: 40px;
+	background-color: #3498db;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button-primary:hover{
+	background-color: #2980b9;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-success{
+	width: 120px;
+	height: 40px;
+	background-color: #6bd825;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button-success:hover{
+	background-color: #1aa130;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-danger{
+	width: 120px;
+	height: 40px;
+	background-color: #e74c3c;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button-danger:hover{
+	background-color: #c0392b;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-info{
+	width: 120px;
+	height: 40px;
+	background-color: #f1c40f;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button-info:hover{
+	background-color: #f39c12;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-emerland{
+	width: 120px;
+	height: 40px;
+	background-color: #2ecc71;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+	color: #fff
+}
+.button-emerland:hover{
+	background-color: #27ae60;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-dark-gray{
+	width: 120px;
+	height: 40px;
+	background-color: #34495e;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button-dark-gray:hover{
+	background-color: #2c3e50;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-amethyst{
+	width: 120px;
+	height: 40px;
+	background-color: #9b59b6;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button-amethyst:hover{
+	background-color: #8e44ad;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-turquoise{
+	width: 120px;
+	height: 40px;
+	background-color: #1abc9c;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button-turquoise:hover{
+	background-color: #16a085;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-orange{
+	width: 120px;
+	height: 40px;
+	background-color: #e67e22;
+	color: #fff;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button-orange:hover{
+	background-color: #d35400;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.button-clouds{
+	width: 120px;
+	height: 40px;
+	background-color: #ecf0f1;
+	color: #000;
+	font-family: 'Ubuntu';
+	text-align: center;
+	font-size: 1.4em;
+	border: none;
+}
+.button-clouds:hover{
+	background-color: #bdc3c7;
+	cursor: pointer;
+	transition: 500ms all;
+	-webkit-transition: 500ms all;
+}
+.radius{
+	border-radius: 6px;
+}
+/* Forms */
+.input{
+	border:1px solid #DADADA;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left:35px;
+	width:310px;
+	height:30px;
+	font-family: 'Arimo';
+	font-size:16px;
+	box-shadow:0 0 10px;
+-webkit-box-shadow:0 0 10px;
+	-webkit-box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.20);
+	-moz-box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.20);
+	box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.20);
+	border-radius: 5px;
+
+}
+.input:focus{
+	transition: 500ms all;
+	border: solid 1px #707070;
+  	-webkit-box-shadow: 7px 7px 2.5px 0px rgba(0,0,0,0.40);
+	-moz-box-shadow: 7px 7px 2.5px 0px rgba(0,0,0,0.40);
+	box-shadow: 7px 7px 2.5px 0px rgba(0,0,0,0.40);
+	
+}
+.input::selection{
+	background-color:  #00ccff;
+	color: #fff;
+}
+
+.textarea{
+	padding: 8px;
+	border: 1px solid #DADADA;
+	border-radius: 6px;
+	font-family: 'Arimo';
+	font-size: 1.2em;
+	width: 400px;
+	height: 75px;
+	-webkit-box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.20);
+	-moz-box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.20);
+	box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.20);
+}
+
+.textarea::selection{
+	background-color:  #00ccff;
+	color: #fff;
+}
+.textarea:focus{
+	transition: 500ms all;
+	border: solid 1px #707070;
+  	-webkit-box-shadow: 7px 7px 2.5px 0px rgba(0,0,0,0.40);
+	-moz-box-shadow: 7px 7px 2.5px 0px rgba(0,0,0,0.40);
+	box-shadow: 7px 7px 2.5px 0px rgba(0,0,0,0.40);
+}
+/* Navbar */
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #737373;
+}
+
+.nav-inhert{
+	background-color: #333;
+}
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #111;
+    transition: 500ms all;
+    -webkit-transition:500ms all;
+}
+.active {
+    background-color: #111;
+    transition: 500ms  all;
+}
+
+/* Media Query */ 
+@media(max-width: 870px){
+	.nav li{
+		float: none;
+		text-align: center;
+		border-bottom: 1px solid #ddd;
+	}
+	.nav li a:hover {
+    background-color: #333;
+}
+	.nav ul{
+		display: none;
+	}
+}
+/* Typography */ 
+p{
+	font-family: 'Source Sans Pro';
+	font-size: 17px;
+}
+a{
+	color: #5bc0d1;
+	text-decoration: none;
+}
+a:hover{
+	color: #0090a8;
+	text-decoration: underline;
+}
+h1{
+	font-family: 'Arimo';
+	font-size: 36px;
+	
+}
+h2{
+	font-family: 'Arimo';
+	font-size: 30px;
+	color: #111
+}
+h3{
+	font-family: 'Arimo';
+	font-size: 24px;
+	color: #111
+}
+h4{
+	font-family: 'Arimo';
+	font-size: 18px;
+	color: #111
+}
+h5{
+	font-family: 'Arimo';
+	font-size: 15px;
+	color: #111
+}
+h6{
+	font-family: 'Arimo';
+	font-size: 13px;
+	color: #111
+}
+small{
+	font-family: 'Arimo';
+	color: #737373;
+	font-weight: normal;
+}
+strong{
+	font-family: 'Arimo';
+	font-weight: bold;
+}
+mark{
+	background-color: #e9f078;
+}
+pre{
+    font-size: 110%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-family: "Courier New",monospace;
+}
+blockquote{
+	padding:10px 20px;
+	margin:0 0 20px;
+	font-size:17.5px;
+	border-left:5px solid #d7d7d7;
+	width: auto;
+}
+address{
+	font-size: 15px;
+}
+var{
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 14px;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.lowercase{
+	text-transform: lowercase;
+}
+.capitalize{
+	text-transform: capitalize;
+}
+
+/* list */
+
+.list-unstyle{
+	list-style-type: none;
+}
+.list-inline li{
+	display:inline-block;
+	padding-left: 10px;
+}
+
+.list-block li{
+	display: block;
+	padding-top: 10px;
+}
+/* Notifications */
+.succes-box{
+	padding:10px 20px;
+	margin:0 0 20px;
+	font-size:17.5px;
+	border-left:5px solid green;
+	border-right:5px solid green;
+	background-color: #6bd825;
+	color: #fff;
+}
+.success-box{
+	padding:10px 20px;
+	margin:0 0 20px;
+	font-size:17.5px;
+	border:1px solid #1aa130;
+	background-color: #6bd825;
+	color: #fff;
+	border-radius: 8px;
+}
+.success-box strong{
+	color: #1aa130;
+}
+.danger-box{
+	padding:10px 20px;
+	margin:0 0 20px;
+	font-size:17.5px;
+	border:1px solid #c53e3e;
+	background-color: #e74c3c;
+	color: #fff;
+	border-radius: 5px;
+}
+.danger-box strong{
+	color: #c53e3e;
+}
+.info-box{
+	padding:10px 20px;
+	margin:0 0 20px;
+	font-size:17.5px;
+	border:1px solid #0090a8;
+	background-color: #00d2ff;
+	color: #fff;
+	border-radius: 5px;
+}
+.info-box strong{
+	color: #0090a8;
+}
+.warning-box{
+	padding:10px 20px;
+	margin:0 0 20px;
+	font-size:17.5px;
+	border:1px solid #d0d200;
+	background-color: #e6e737;
+	color: #fff;
+	border-radius: 5px;
+
+}
+.warning-box strong{
+	color: #d0d200;
+}
+/* Colors */ 
+.black{
+	color: #000
+}
+.gray{
+	color: #95a5a6;
+}
+.dark-gray{
+	color: #34495e;
+}
+.blue{
+	color: #3498db;
+}
+.red{
+	color: #e74c3c;
+}
+.yellow{
+	color: #f1c40f;
+}
+.emerland{
+	color: #2ecc71;
+}
+.amethtsy{
+	color: #9b59b6;
+}
+.turquoise{
+	color: #1abc9c;	
+}
+.orange{
+	color: #e67e22;
+}
+
+/* Background Colors */
+
+.bg-black{
+	background-color: #000
+}
+.bg-gray{
+	background-color: #95a5a6;
+}
+.bg-dark-gray{
+	background-color: #34495e;
+}
+.bg-blue{
+	background-color: #3498db;
+}
+.bg-red{
+	background-color: #e74c3c;
+}
+.bg-yellow{
+	background-color: #f1c40f;
+}
+.bg-emerland{
+	background-color: #2ecc71;
+}
+.bg-amethtsy{
+	background-color: #9b59b6;
+}
+.bg-turquoise{
+	background-color: #1abc9c;	
+}
+.bg-orange{
+	background-color: #e67e22;
+}
